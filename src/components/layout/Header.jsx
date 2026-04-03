@@ -1,7 +1,4 @@
-import { useState } from "react";
-
-function Header() {
-  const [role, setRole] = useState("viewer");
+function Header({role,setRole}) {
 
   return (
     <div className="flex justify-between items-center p-4 bg-white shadow">

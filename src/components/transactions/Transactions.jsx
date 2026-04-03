@@ -2,7 +2,7 @@ import SearchBar from "./SearchBar";
 import Filter from "./Filter";
 import TransactionTable from "./TransactionTable";
 
-function Transactions() {
+function Transactions({role}) {
   return (
     <div className="mt-6">
       <div className="flex flex-col md:flex-row gap-4 justify-between mb-4">
@@ -10,7 +10,7 @@ function Transactions() {
         <Filter />
       </div>
 
-      <TransactionTable />
+      <TransactionTable role={role}/>
     </div>
   );
 }
