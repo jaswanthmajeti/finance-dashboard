@@ -1,6 +1,7 @@
 import Sidebar from "../components/layout/Sidebar";
 import Header from "../components/layout/Header";
 import SummaryCards from "../components/dashboard/SummaryCards";
+import Charts from "../components/charts/Charts";
 
 function Dashboard() {
   return (
@@ -12,6 +13,7 @@ function Dashboard() {
 
         <div className="p-6">
           <SummaryCards />
+          <Charts></Charts>
         </div>
       </div>
     </div>
