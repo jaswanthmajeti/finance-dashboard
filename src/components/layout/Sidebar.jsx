@@ -1,5 +1,5 @@
 function Sidebar(){
-    return (<div className="w-64 h-screen bg-gray-900 text-white p-5">
+    return (<div className="fixed left-0 top-0 w-64 h-screen bg-gray-900 text-white p-5">
       <h1 className="text-2xl font-bold mb-8">FinTrack</h1>
       
       <ul className="space-y-4">
