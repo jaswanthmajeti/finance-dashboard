@@ -14,11 +14,12 @@ function TransactionTable({ transactions }) {
         </thead>
 
         <tbody>
-          {transactions.map((txn) => (
+          
+          {transactions.length > 0 ? transactions.map((txn) => (
             <tr key={txn.id} className="border-b hover:bg-gray-50">
               <td className="py-2">{txn.date}</td>
               <td>{txn.category}</td>
-              <td className="font-medium">₹{txn.amount}</td>
+              <td className="font-medium">₹{txn.amount.toLocaleString()}</td>
               <td
                 className={
                   txn.type === "income"
@@ -29,7 +30,13 @@ function TransactionTable({ transactions }) {
                 {txn.type}
               </td>
             </tr>
-          ))}
+          )): (
+    <tr>
+      <td colSpan="4" className="text-center py-6 text-gray-500">
+        No transactions found
+      </td>
+    </tr>
+  )}
         </tbody>
       </table>
     </div>

@@ -25,7 +25,7 @@ function Transactions({ role, transactions, setTransactions }) {
       {role === "admin" && (
         <button
           onClick={() => setShowModal(true)}
-          className="bg-blue-600 text-white px-4 py-2 rounded mb-4"
+          className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
         >
           + Add Transaction
         </button>
