@@ -5,6 +5,7 @@ import SummaryCards from "../components/dashboard/SummaryCards";
 import Charts from "../components/charts/Charts";
 import Transactions from "../components/transactions/Transactions";
 import transactionsData from "../data/transactions";
+import Insights from "../components/insights/Insights";
 
 function Dashboard() {
   const [role, setRole] = useState("viewer");
@@ -42,6 +43,7 @@ function Dashboard() {
             transactions={transactions}
             setTransactions={setTransactions}
           />
+          <Insights transactions={transactions} />
         </div>
       </div>
     </div>
